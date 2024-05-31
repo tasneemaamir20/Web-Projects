@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(33, 3, 3);
+}
+
+#container{
+    height: 85vh;
+    width: 90%;
+    /* border: solid black; */
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#playbox{
+    /* border: solid red; */
+    height: 80%;
+    width: 70%;
+}
+#playlist{
+    /* border: solid red; */
+    height: 80%;
+    width: 25
+    0px;
+    color: white;
+    overflow: scroll;
+}
+#playbox video{
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "thumbnail":"./images/kabira.png",
+        "title":"Kabira song",
+        "video":"./video/_Kabira Full Song_ Yeh Jawaani Hai Deewani _ Pritam _ Ranbir Kapoor, Deepika Padukone.mp4"
+        
+    },
+
+    {
+        "thumbnail":"./images/salaar.png",
+        "title":"Salaar trailer",
+        "video":"./video/Salaar Hindi Trailer _ Prabhas _ Prashanth Neel _ Prithviraj_Shruthi_Hombale Films_ Vijay Kiragandur.mp4"
+    },
+
+    {
+        "thumbnail":"./images/papa.png",
+        "title":"Papa meri jaan song ",
+        "video":"./video/ANIMAL_ PAPA MERI JAAN (Song) _ Ranbir Kapoor _ Anil K,Rashmika M _ Sandeep V _Sonu Nigam _Bhushan K.mp4"
+    },
+
+    {
+        "thumbnail":"./images/kaise.png",
+        "title":"Kaise hua song",
+        "video":"./video/LYRICAL_ Kaise Hua _ Kabir Singh _ Shahid K, Kiara A, Sandeep V _ Vishal Mishra, Manoj Muntashir.mp4"
+    },
+
+    {
+        "thumbnail":"./images/tum.png",
+        "title":"Tum se hi song",
+        "video":"./video/Tum Se Hi Lyrcial _ Jab We Met _ Kareena Kapoor, Shahid Kapoor _ Mohit Chauhan _ Pritam.mp4"
+    }
+]
