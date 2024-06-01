@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <form action="">
+        <h1>Instagram</h1>
+        <h6>sign up to see photos and videos <br> from your friends.</h6>
+        <button id="loginfacebook"><i class="fa-brands fa-square-facebook"></i>   Log in with Facebook</button> <br>
+        <p>-------------OR------------</p>
+        <input type="text" name="email" placeholder="Mobile number or email address"><br><br>
+        <input type="text" name="FullName" placeholder="Full Name"><br><br>
+        <input type="text" name="UserName" placeholder="Username"><br><br>
+        <input type="password" name="password" placeholder="Password"><br>
+
+        <h6>People who use our service may have uploaded <br> your contact information to instagram . <a href="">Learn more</a></h6>
+        <h6>By signing up,you agree to our <a href="">Terms, </a>  <a href="">Privacy <br> Policy</a> and <a href="">Cookies Policy.</a></h6>
+
+        <button id="signupbtn" type="submit">Sign Up</button>
+    </form>
+    <div >
+        have you already an account? <a href="./Insta.html">Log in </a>
+    </div>
+    <script>
+         let form=document.querySelector("form");
+
+form.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    let userName=document.getElementsByName("UserName")[0].value;
+    let password=document.getElementsByName("password")[0].value;
+    let mail=document.getElementsByName("email")[0].value;
+    let fullName=document.getElementsByName("FullName")[0].value;
+    
+    if(userName=="" && password=="")
+    {
+        alert("Please enter username and password");
+    }
+    else if(userName=="")
+    {
+        alert("please enter username");
+
+    }
+    else if(password=="")
+    {
+        alert("Please enter password");
+    }
+    else if(fullName =="")
+    {
+        alert("Please enter Full Name");
+    }
+    else if(mail=="")
+    {
+        alert("Please enter the email id");
+    }
+    else{
+        alert("Registered successufully!!");
+        localStorage.setItem("mail",mail);
+        localStorage.setItem("fullname",fullName);
+        localStorage.setItem("username",userName);
+        localStorage.setItem("password",password);
+
+        open("./insta.html");
+        }
+})
+
+</script>
+    </script>
+</body>
+</html>

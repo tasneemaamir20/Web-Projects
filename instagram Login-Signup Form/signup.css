@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  border: 2px solid black;
+  height: 580px;
+  width: 300px;
+  text-align: center;
+  /* margin-left: 550px; */
+}
+input {
+  width: 220px;
+  height: 25px;
+}
+
+#loginfacebook {
+  background-color: rgba(38, 38, 252, 0.879);
+  color: white;
+  width: 220px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+#signupbtn {
+  background-color: blue;
+  color: white;
+  width: 220px;
+  height: 25px;
+  border-radius: 5px;
+}
+div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 70px;
+  height: 60px;
+  width: 300px;
+  border: 2px solid black;
+}

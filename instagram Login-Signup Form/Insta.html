@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./insta.css" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+  </head>
+  <body>
+    <div class="puradiv">
+      <div id="leftdiv">
+        <img src="./Images/screenshot3.png" alt="" />
+      </div>
+      <div id="rightdiv">
+        <div id="div1">
+          <form action="" id="form">
+            <fieldset>
+              <center>
+                <h1>Instagram</h1>
+
+                <input type="text" autocomplete="username" id="Loginusername" name="lUserName" placeholder="Phone number,username, or email"/><br /><br />
+                <input type="password" autocomplete="current-password" id="loginpw" name="lpassword" placeholder="password" /><br /><br />
+                <button id="button" >log in</button><br /><br />
+                <p>-------------OR------------</p>
+              </center>
+              <center>
+                <a href id="Facebook"
+                  ><i class="fa-brands fa-square-facebook"></i> Login with
+                  Facebook</a>
+                <br />
+                <br />
+                <a href="" id="forgetPass">Forget password?</a>
+              </center>
+            </fieldset>
+          </form>
+        </div>
+        <div id="div2">
+          <form action="">
+            <fieldset>
+              <p>
+                Don't have an account?
+                <a href="./signup.html"  id="signbutton">Sign up</a>
+              </p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      let form=document.querySelector("form");
+
+      form.addEventListener("submit",(e)=>{
+          e.preventDefault();
+          let userName=document.getElementsByName("lUserName")[0].value;
+          let password=document.getElementsByName("lpassword")[0].value;
+
+          let lUserName=localStorage.getItem("username");
+          let lPassword=localStorage.getItem("password");
+          
+          if(userName===lUserName && password=== lPassword)
+          {
+              alert("Log in succefull!!");
+              open("./HomePage.html");
+          }
+          else if(userName != lUserName)
+          {
+              alert("please enter correct username");
+
+          }
+          else if(password != lPassword)
+          {
+              alert("Please enter correct password");
+          }
+          else if(userName != lUserName && password != lPassword){
+                  alert("Please enter correct username and passowrd");
+              }
+      })
+      
+  </script>
+  </body>
+</html>
